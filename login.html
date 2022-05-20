@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Aimelive | Freelance Developer | Official Biography website">
+    <meta name="keywords" content="Aimelive, Biography, Awesome websites">
+    <meta name="author" content="Aime Ndayambaje">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GilTech- Login Page </title>
+    <link rel="icon" href="images/Rectangle 21.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <section class="header navbar">
+        <div>
+            <a href="index.html">
+                <table>
+                    <tr>
+                      
+                        <td><label id="logo_text">GilTech</label></td>
+                    </tr>
+                </table>
+            </a>
+
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="blog.html">News</a> </li>
+                <li><a href="contact.html">Contacts</a> </li>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="#" id="admin_login">login</a> </li>
+            </ul>
+            <a class="humberg" onclick="showNav()" id="humberg"><i class="fa fa-bars"></i></a>
+            <div class="mybodyhover" id="mybodyhover" onclick="closeNav()"></div>
+            <nav class="mobileNav" id="mobileNav">
+
+                <i style="font-size:24px" class="fa" id="closeNav"><span onclick="closeNav()">&#xf00d;</span></i>
+                <a href="#">Home</a>
+                <a href="#">News</a>
+                <a href="#">About</a>
+                <a href="contact.html">Contacts</a>
+                <a href="login.html">Login</a>
+
+
+
+            </nav>
+        </div>
+    </section>
+    
+
+    <center>
+        <div class="login">
+            <img src="images/avatar.png" id="logo" width="80px" />
+            <h2 id="animateHeading">Hey Admin, Welcome</h2>
+            <form method="post" class="login_form" name="loginAdmin" id="messageForm">
+                
+                <label id="errorEmail">E-mail  </label><br>
+                <input type="text" name="email" placeholder="Email or Phone number" class="input" id="email" />
+                <div class="error"></div>
+                <br>
+                <label id="errorPassword">Password </label><br>
+                <input type="password" name="password" placeholder="Enter Password" autocomplete="current-password" class="input" id="pass" />
+                <div class="error"></div>
+                <br>
+                <label id="checkbox"><input type="checkbox" onclick="myFunction()"> &nbsp; Show Password</label>
+
+                <br>
+                <input type="submit" Value="Sign in" placeholder="Email or Phone number" class="input" id="signin" /><br>
+
+            </form>
+            <p>Don't have an Account? <a href="#"> Sign up now </a></p>
+        </div>
+    </center>
+
+    
+    <center>
+        <p class="label">&copy; Copright; Gilbert 2022 <a href="">Terms and Conditions here</a></p>
+    </center>
+    <script>
+        let humberg = document.getElementById("humberg")
+        let navBar = document.getElementById("mobileNav")
+        let mybodyhover = document.getElementById("mybodyhover")
+
+        function showNav() {
+            navBar.style.width = "45%";
+            mybodyhover.style.display = "block"
+        }
+
+        function closeNav() {
+            navBar.style.width = 0
+            mybodyhover.style.display = "none"
+        }
+    </script>
+    <script scr="validation.js"></script>
+</body>
+
+</html>

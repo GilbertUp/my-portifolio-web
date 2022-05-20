@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="giltech | Freelance Developer | Official Biography website">
+    <meta name="keywords" content="Aimelive, Biography, Awesome websites">
+    <meta name="author" content="Giltech">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GilTech - Capstone Project | Landing Page </title>
+    <link rel="icon" href="images/Rectangle 21.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="header navbar">
+        <div>
+            <table>
+                <tr>
+                    <!-- <td><img src="images/Rectangle 21.png" id="logo" width="50px" /></td> -->
+                    <td><label id="logo_text">GilTech</label></td>
+                </tr>
+            </table>
+            <ul>
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="blog.html">News</a> </li>
+                <li><a href="contact.html">Contacts</a> </li>
+                <li><a href="about.html">About</a> </li>
+                <li><a href="login.html" id="admin_login">login</a> </li>
+            </ul>
+            <a class="humberg" onclick="showNav()" id="humberg"><i class="fa fa-bars"></i></a>
+            <div class="mybodyhover" id="mybodyhover" onclick="closeNav()"></div>
+            <nav class="mobileNav" id="mobileNav">
+
+                <i style="font-size:24px" class="fa" id="closeNav"><span onclick="closeNav()">&#xf00d;</span></i>
+                <a href="index.html">Home</a>
+                <a href="blog.html">News</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contacts</a>
+                <a href="login.html">Login</a>
+
+
+
+            </nav>
+        </div>
+    </section>
+    <section class="body">
+        <div class="overview">
+            <h5>FREELANCE DEVELOPER</h5>
+            <h1 style="font-size: 45px;">Hello, my name is Gilbert</h1>
+            <p style="font-size: 25px;">Welcome here, I am a software developer with over ..... years of experience, if you need a developer for an awesome website please feel free to contact me.
+
+            </p>
+
+            <button class="pro">View my cv</button>
+            <button class="link" onclick="location.href='./blog.html'">Articles</button>
+        </div>
+
+        <div class="profile">
+
+          <div> <img src="images/me1.png" style="width:200px" </div>
+
+           
+
+
+            <hr class="line"color=#rgba(36, 141, 34, 1)>
+            <a href="#" class="fa fa-facebook"></a>
+            
+            <a href="https://www.linkedin.com/in/iturushimbabazi-gilbert-907893222/" class="fa fa-linkedin"></a>
+        
+       
+            <a href="https://github.com/gilbertUp" class="fa fa-github"></a>
+            <br><br>
+       
+            <p style="font-size: 25px;">KG 452 ST <br> Rwanda - Kigali City </p>
+        </div>
+
+    </section>
+    <center>
+        <p class="label">&copy; Copright; GLTech 2022 <a href="">Terms and Conditions here</a></p>
+    </center>
+    <script>
+        let humberg = document.getElementById("humberg")
+        let navBar = document.getElementById("mobileNav")
+        let mybodyhover = document.getElementById("mybodyhover")
+
+        function showNav() {
+            navBar.style.width = "45%";
+            mybodyhover.style.display = "block"
+        }
+
+        function closeNav() {
+            navBar.style.width = 0
+            mybodyhover.style.display = "none"
+        }
+    </script>
+</body>
+
+</html>
